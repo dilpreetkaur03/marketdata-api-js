@@ -4,5 +4,6 @@ const value = process.argv[2];
 const unitCode = process.argv[3];
 
 const parsed = parseValue(value, unitCode);
+const time = new Date().getTime();
 
 console.log(`Parsed [ ${value} ] as [ ${parsed} ] with [ unitCode=${unitCode} ]`);
